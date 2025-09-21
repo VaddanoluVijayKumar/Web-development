@@ -1,127 +1,276 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Tags and Attributes Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
+        .tag-section { border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; border-radius: 8px; }
+        h2 { color: #333; }
+        pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        code { color: #d63384; }
+        .obsolete { color: #e67e22; }
+    </style>
+</head>
+<body>
+    <h1>Assignment 1: HTML5 Tags and Attributes</h1>
+    <p>This document demonstrates a comprehensive understanding of HTML5 tags and their associated attributes.</p>
 
-<html>
-    <head>
-<title> HTML Cheat Sheeeeet</title>
-    </head>
+    <div class="tag-section">
+        <h2>Article Element</h2>
+        <p>The <code>&lt;article&gt;</code> tag is used for independent, self-contained content, like a blog post or news story.</p>
+        <pre><article>
+    <h2>A Sample Article</h2>
+    <p>This is the content of the article.</p>
+</article></pre>
+    </div>
 
-    <body>
-        <a href="blog.html">Go to the Article</a>
-        <!-- Heading Types-->
-        <h1> EE SAALA CUP NAMDE </h1>
-        <h2> EE SAALA CUP NAMDE </h2>
-        <h3> EE SAALA CUP NAMDE</h3>
-        <h4> EE SAALA CUP NAMDE</h4>
-        <h5> EE SAALA CUP NAMDE</h5>
-        <h6>EE SAALA CUP NAMDE</h6>
+    <div class="tag-section">
+        <h2>Aside Element</h2>
+        <p>The <code>&lt;aside&gt;</code> tag is for content that is related to the main content but separate from it, like a sidebar.</p>
+        <pre><aside>
+    <h3>Related Information</h3>
+    <p>This information is in a sidebar.</p>
+</aside></pre>
+    </div>
 
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-            <em>Doloremque error eos sapiente perspiciatis, vero modi fugiat et explicabo? </em>
-            Ipsa asperiores veniam explicabo <a href="https:google.com"target = "_blank"> amet itaque quos </a>error ad similique fugiat odit!</p>
-            <p> Lorem ipsum dolor <strong> sit amet consectetur adipisicing </strong>elit. Sequi, provident!</p>
+    <div class="tag-section">
+        <h2>Audio Element</h2>
+        <p>The <code>&lt;audio&gt;</code> tag embeds sound content. The <code>controls</code> attribute adds play, pause, and volume controls.</p>
+        <pre><audio controls>
+    <source src="audio-file.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio></pre>
+    </div>
 
+    <div class="tag-section">
+        <h2>Button Element</h2>
+        <p>The <code>&lt;button&gt;</code> tag creates a button. The <code>type</code> attribute specifies the button's type.</p>
+        <pre><button type="submit">Submit Form</button></pre>
+    </div>
 
-            <!-- Lists-->
+    <div class="tag-section">
+        <h2>Canvas Element</h2>
+        <p>The <code>&lt;canvas&gt;</code> tag is a container for graphics. It uses attributes like <code>width</code> and <code>height</code>.</p>
+        <pre><canvas id="myCanvas" width="200" height="100" style="border:1px solid #000;">
+    Your browser does not support the canvas element.
+</canvas></pre>
+    </div>
 
-            <!-- Unordered Lists-->
-             <ul>
-                <li>Virat Kohli</li>
-                <li>MS Dhoni</li>
-                <li>Chris Gayle</li>
-             </ul>
+    <div class="tag-section">
+        <h2>Datalist Element</h2>
+        <p>The <code>&lt;datalist&gt;</code> tag provides a list of options for an <code>&lt;input&gt;</code> field. The <code>list</code> attribute of the input is linked to the datalist's <code>id</code>.</p>
+        <pre><input type="text" list="browsers" placeholder="Choose a browser">
+<datalist id="browsers">
+    <option value="Chrome"></option>
+    <option value="Firefox"></option>
+    <option value="Safari"></option>
+</datalist></pre>
+    </div>
 
-             <!-- Ordered Lists-->
-              <ol>
-                <li>Virat Kohli</li>
-                <li>MS Dhoni</li>
-                <li>Chris Gayle</li>
-              </ol>
-<br> <hr>
-              <!-- Creating a Table-->
-               <table>
-                <thead>
-                    <tr>
-                        <th> Name </th>
-                        <th>    Email</th>
-                        <th>   Phone number</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> Vijay </td>
-                        <td> vijayk8326@gmail.com</td>
-                        <td>7989036194</td>
-                    </tr>
-                    <tr>
-                        <td>Virat Kohli</td>
-                        <td>virat183@gmail.com</td>
-                        <td>96402836656</td>
-                    </tr>
+    <div class="tag-section">
+        <h2>Details and Summary Elements</h2>
+        <p>The <code>&lt;details&gt;</code> tag creates an expandable section. The <code>&lt;summary&gt;</code> tag provides the visible heading for the details section.</p>
+        <pre><details>
+    <summary>Click to view more</summary>
+    <p>Here is the extra content that is hidden by default.</p>
+</details></pre>
+    </div>
 
-                </tbody>
-               </table>
+    <div class="tag-section">
+        <h2>Dialog Element</h2>
+        <p>The <code>&lt;dialog&gt;</code> tag creates a popup dialog box. The <code>open</code> attribute makes the dialog visible.</p>
+        <pre><dialog open>This is a dialog box.</dialog></pre>
+    </div>
 
-               <br>
-               <hr>
-               <br>
-               <!-- forms -->
+    <div class="tag-section">
+        <h2>Embed Element</h2>
+        <p>The <code>&lt;embed&gt;</code> tag is for embedding external content like a PDF or a video. It uses the <code>src</code> and <code>type</code> attributes.</p>
+        <pre><embed src="example.pdf" type="application/pdf" width="500" height="300"></pre>
+    </div>
 
-               <form action = " process.php " method = "POST">
-                <label> First Name </label>
-                <input type="text" name = " firstName "
-                placeholder="Enter First Name">
-                <div>
-                    <br>
-                </div>
-                <label style="align-self:first baseline;"> Last Name </label>
-                <input style="align-self: start;" type="text" name = " lastName "
-                placeholder="Enter Last Name" > 
-                <div></div>
-                <br>
-                <label> Email </label>
-                <input type="email" email =  " email "
-                placeholder="Enter email">
-                <div></div>
-                <br>
-                <label> Message </label>
-                <textarea name = " message"></textarea>
-                <div></div>
-                <br>
-                <label> Gender </label>
-                <select name = "gender">
-                    <option value="Male"> Male </option>
-                    <option value="Female"> Female </option>
-                    <option value="Other"> Other </option>
-                </select>
-                <div></div>
-                <br>
-                <label> Age </label>
-                <input type="number" name = "age">
-                <div></div>
-                <br>
-                <label> Birthday </label>
-                <input type="date"name = "birthday">
-                <br>
-                <div></div>
-                <br>
-                <input type="submit" name="submit" value = "Submit">
-<br>
+    <div class="tag-section">
+        <h2>Figure and Figcaption Elements</h2>
+        <p>The <code>&lt;figure&gt;</code> tag represents a self-contained content block, often with a caption provided by the <code>&lt;figcaption&gt;</code> tag.</p>
+        <pre><figure>
+    <img src="https://via.placeholder.com/150" alt="Placeholder image">
+    <figcaption>A sample image of a placeholder.</figcaption>
+</figure></pre>
+    </div>
 
-                <a href="images/178.jpg">
-                <img src="images/178.jpg" alt="IMAGE NOT FOUND" width="225" height="300">
-                </a>
-            </form>
-            <br>
-            <!-- Quotation --> 
-             <blockquote cite="www.google.com">
-             virat kohli is the greatest batsman of this Generation
-            </blockquote>
-            <br>
-            <p><abbr title = "World Wide Web" >www</abbr> move the mouse here</p>
-            <br>
+    <div class="tag-section">
+        <h2>Footer Element</h2>
+        <p>The <code>&lt;footer&gt;</code> tag contains information about the author, copyright, or contact information.</p>
+        <pre><footer>
+    <p>&copy; 2025 All rights reserved.</p>
+</footer></pre>
+    </div>
 
+    <div class="tag-section">
+        <h2>Header Element</h2>
+        <p>The <code>&lt;header&gt;</code> tag represents introductory content, often with navigation or a heading.</p>
+        <pre><header>
+    <h1>Welcome to My Website</h1>
+</header></pre>
+    </div>
 
+    <div class="tag-section">
+        <h2>Main Element</h2>
+        <p>The <code>&lt;main&gt;</code> tag contains the primary content of the document.</p>
+        <pre><main>
+    <p>This is the main content of the page.</p>
+</main></pre>
+    </div>
 
+    <div class="tag-section">
+        <h2>Mark Element</h2>
+        <p>The <code>&lt;mark&gt;</code> tag is used to highlight parts of text for emphasis.</p>
+        <pre><p>This is some text with a <mark>highlighted</mark> word.</p></pre>
+    </div>
 
-    </body>
+    <div class="tag-section">
+        <h2>Meter Element</h2>
+        <p>The <code>&lt;meter&gt;</code> tag represents a measurement within a given range, like a fuel gauge. Attributes include <code>value</code>, <code>min</code>, <code>max</code>, <code>low</code>, <code>high</code>, and <code>optimum</code>.</p>
+        <pre><p>Usage: <meter value="0.6" min="0" max="1" low="0.2" high="0.8" optimum="0.5">60%</meter></p></pre>
+    </div>
+
+    <div class="tag-section">
+        <h2>Nav Element</h2>
+        <p>The <code>&lt;nav&gt;</code> tag contains navigation links to other pages or sections.</p>
+        <pre><nav>
+    <a href="#home">Home</a> |
+    <a href="#about">About</a> |
+    <a href="#contact">Contact</a>
+</nav></pre>
+    </div>
+
+    <div class="tag-section">
+        <h2>Progress Element</h2>
+        <p>The <code>&lt;progress&gt;</code> tag represents a progress bar for a task. The <code>value</code> and <code>max</code> attributes specify the completion status.</p>
+        <pre><p>Loading... <progress value="70" max="100">70%</progress></p></pre>
+    </div>
+
+    <div class="tag-section">
+        <h2>Section Element</h2>
+        <p>The <code>&lt;section&gt;</code> tag groups related content. It is a thematic grouping of content, typically with a heading.</p>
+        <pre><section>
+    <h3>Section Title</h3>
+    <p>This is a paragraph within a section.</p>
+</section></pre>
+    </div>
+
+    <div class="tag-section">
+        <h2>Time Element</h2>
+        <p>The <code>&lt;time&gt;</code> tag defines a date or time. The <code>datetime</code> attribute provides a machine-readable format.</p>
+        <pre><p>The event will be held on <time datetime="2025-10-26T20:00:00Z">October 26th at 8 PM</time>.</p></pre>
+    </div>
+
+    <div class="tag-section">
+        <h2>Video Element</h2>
+        <p>The <code>&lt;video&gt;</code> tag embeds a video. The <code>controls</code> attribute adds the playback controls, and the <code>poster</code> attribute specifies an image to show while the video is downloading.</p>
+        <pre><video controls width="300" poster="image.jpg">
+    <source src="video-file.mp4" type="video/mp4">
+    <source src="video-file.webm" type="video/webm">
+    Your browser does not support the video element.
+</video></pre>
+    </div>
+
+    <div class="tag-section">
+        <h2>WBR Element</h2>
+        <p>The <code>&lt;wbr&gt;</code> tag provides a line break opportunity for a long word or URL to prevent overflow.</p>
+        <pre><p>This is a verylongwordthatneeds<wbr>abreakwhenitisdisplayedona<wbr>smallscreen.</p></pre>
+    </div>
+
+    <div class="tag-section">
+        <h2>Form Elements and Attributes</h2>
+        <p>Forms are created using the <code>&lt;form&gt;</code> tag, which has attributes like <code>action</code> and <code>method</code>.</p>
+        <pre><form action="/submit" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" autocomplete="off"><br>
+    <label for="country">Country:</label><br>
+    <select id="country" name="country">
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+    </select><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+    <fieldset>
+        <legend>Contact Information</legend>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+    </fieldset><br>
+    <input type="submit" value="Submit">
+</form></pre>
+    </div>
+
+    <hr>
+    <h3>List of common HTML5 tags and their usage:</h3>
+    <div class="tag-section">
+        <pre>
+&lt;a href="https://www.google.com" target="_blank"&gt;Google&lt;/a&gt;
+&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;
+&lt;b&gt;Bold Text&lt;/b&gt;
+&lt;blockquote cite="http://www.example.com"&gt;
+    &lt;p&gt;This is a blockquote.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is the first line.&lt;br&gt;This is the second line.&lt;/p&gt;
+&lt;code&gt;console.log('Hello, World!');&lt;/code&gt;
+&lt;p&gt;My favorite color is &lt;del datetime="2025-09-21T10:00:00Z"&gt;blue&lt;/del&gt; red.&lt;/p&gt;
+&lt;p&gt;I &lt;em&gt;love&lt;/em&gt; HTML!&lt;/p&gt;
+&lt;i&gt;Italic Text&lt;/i&gt;
+&lt;img src="image.jpg" alt="Description of the image" width="100" height="100"&gt;
+&lt;p&gt;My favorite color is red &lt;ins datetime="2025-09-21T10:00:00Z"&gt;and green&lt;/ins&gt;.&lt;/p&gt;
+&lt;p&gt;Press &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;S&lt;/kbd&gt; to save.&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+&lt;pre&gt;
+    This text is
+    preformatted.
+&lt;/pre&gt;
+&lt;p&gt;As a wise man once said, &lt;q cite="http://www.example.com"&gt;Never stop learning.&lt;/q&gt;&lt;/p&gt;
+&lt;p&gt;Regular price: &lt;s&gt;$50&lt;/s&gt; Now: $25&lt;/p&gt;
+&lt;small&gt;This is some small text.&lt;/small&gt;
+&lt;span&gt;This is an inline container.&lt;/span&gt;
+&lt;strong&gt;Important text&lt;/strong&gt;
+&lt;p&gt;This is H&lt;sub&gt;2&lt;/sub&gt;O.&lt;/p&gt;
+&lt;p&gt;This is 2&lt;sup&gt;2&lt;/sup&gt;.&lt;/p&gt;
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Email&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;John Doe&lt;/td&gt;
+            &lt;td&gt;john@example.com&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+        </pre>
+    </div>
+
+    <div class="tag-section">
+        <h2>Template Element</h2>
+        <p>The <code>&lt;template&gt;</code> tag holds content that will not be displayed immediately. It is useful for creating reusable HTML fragments with JavaScript.</p>
+        <pre><template id="my-template">
+    &lt;p&gt;Hello from the template!&lt;/p&gt;
+</template></pre>
+    </div>
+
+    <p><strong>Note on Validation:</strong> While this code is designed to be valid, you can use an HTML validator tool like the one provided in the assignment (https://www.freeformatter.com/html-validator.html) to check for any errors and ensure it meets all validation criteria.</p>
+
+</body>
 </html>
